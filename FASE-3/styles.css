@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to right, #87CEEB, #1E90FF); /* Degradado azul cielo a azul más intenso */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.hero {
+    background: url('fondo.png') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-container:hover {
+    transform: translateY(-5px);
+}
+
+.img-fluid {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.img-fluid:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 3px solid #ffcc00;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.navbar:hover {
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+    text-decoration: underline;
+}
